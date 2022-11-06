@@ -46,7 +46,7 @@ cd ..
 ```
 3. Build the test server image (optional) 
 ```
-cd Test_Api_Server
+cd Test_Api_server
 docker build -t restapi-img:latest .  
 ```
 4. RUN the entire project
