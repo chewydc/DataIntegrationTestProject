@@ -42,6 +42,7 @@ cd DataIntegrationTestProject
 ```
 cd Parser_App
 docker build -t parser-app-img:latest . 
+cd ..
 ```
 3. Build the test server image (optional) 
 ```
