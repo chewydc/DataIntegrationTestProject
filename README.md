@@ -27,7 +27,7 @@ To keep it simple, the files to be processed are stored within the app in the "F
 A small restapi server is available to test the app and be the "reception of the data sent by the parser app".
 
 <p align="center">
-     <img src="https://github.com/chewydc/DataIntegrationTestProject/Flow.PNG">
+     <img src="https://github.com/chewydc/DataIntegrationTestProject/blob/64fe21260c50883689e9446982b14dd93beb5a85/Flow.PNG">
 </p>
 
 ## Instruction for running the project as Docker containers
@@ -59,5 +59,5 @@ $ docker run -d --name parserapp --net my-network parser-app-img:latest
 At this point, you should see the incoming data printed in the console of the "ingestionendpoint" container
 
 <p align="center">
-     <img src="https://github.com/chewydc/DataIntegrationTestProject/ResultExample.PNG">
+     <img src="https://github.com/chewydc/DataIntegrationTestProject/blob/64fe21260c50883689e9446982b14dd93beb5a85/ResultExample.PNG">
 </p>
