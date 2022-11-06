@@ -35,23 +35,24 @@ We can test it by running both applications, Parser_App and Test_Api_Server, in 
 
 1. Clone the repository
 ```
-$ git clone https://github.com/chewydc/DataIntegrationTestProject.git
+git clone https://github.com/chewydc/DataIntegrationTestProject.git
+cd DataIntegrationTestProject
 ```
 2. Build the parser app image
 ```
-$ cd Parser_App
-$ docker build -t parser-app-img:latest . 
+cd Parser_App
+docker build -t parser-app-img:latest . 
 ```
 3. Build the test server image (optional) 
 ```
-$ cd Test_Api_Server
-$ docker build -t restapi-img:latest .  
+cd Test_Api_Server
+docker build -t restapi-img:latest .  
 ```
 4. RUN the entire project
 ```
-$ docker network create my-network
-$ docker run -d --name ingestionendpoint --net my-network -p 8080:8080 restapi-img:latest
-$ docker run -d --name parserapp --net my-network parser-app-img:latest
+docker network create my-network
+docker run -d --name ingestionendpoint --net my-network -p 8080:8080 restapi-img:latest
+docker run -d --name parserapp --net my-network parser-app-img:latest
 
 ```
 5. Check the result
